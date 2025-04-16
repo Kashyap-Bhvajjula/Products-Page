@@ -1,0 +1,130 @@
+.cart-dropdown {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 300px;
+  max-height: 400px; 
+  overflow-y: auto;  
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  font-family: sans-serif;
+  border-radius: 10px;
+}
+
+/* Optional: nice scrollbar */
+.cart-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+.cart-dropdown::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.cart-dropdown h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.item-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.qty-controls button {
+  padding: 0;
+  font-size: 16px;
+  font-weight: bold;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.qty-controls button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.qty-controls span {
+  font-size: 14px;
+  width: 24px;
+  text-align: center;
+}
+
+.remove-btn {
+  font-size: 12px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.total {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.pay-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px 0;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pay-btn:hover {
+  background-color: #218838;
+}
