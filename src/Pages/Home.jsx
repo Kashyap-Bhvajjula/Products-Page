@@ -71,7 +71,7 @@ const Home = () => {
         triggerAnimation={triggerAnimation}
         handleProceedToPayment={handleProceedToPayment}
       />
-      <div className="products-grid">
+      <div className="flex flex-wrap gap-4 justify-center p-5">
         {sampleProducts.map((product) => (
           <ProductCard
             key={product.id}

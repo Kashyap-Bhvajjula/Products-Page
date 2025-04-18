@@ -25,7 +25,7 @@ const Navbar = ({ cart, updateQuantity, removeFromCart }) => {
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
-    <nav className="navbar">
+    <nav className="flex text-2xl text-red-500 bg-[#333] items-center justify-between pt-4 pb-4 pl-5 pr-5">
       <h1>🛍️ eShop</h1>
       <div className="cart-icon-wrapper" ref={cartRef} onClick={toggleCart} style={{ color: showCart ? '#000' : 'black' }}>
         🛒<span className="cart-count">{totalItems}</span>

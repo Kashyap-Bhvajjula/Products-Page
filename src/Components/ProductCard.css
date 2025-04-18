@@ -1,3 +1,4 @@
+@import "tailwindcss";
 .product-card {
   width: 200px;
   padding: 16px;
@@ -12,31 +13,6 @@
   transform: scale(1.03);
 }
 
-.product-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-
-.product-card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.product-card h3 {
-  margin: 10px 0 5px;
-  font-size: 18px;
-}
-
-.price {
-  color: #333;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
 
 .add-btn {
   padding: 6px 12px;
@@ -53,13 +29,6 @@
   background-color: #218838;
 }
 
-.quantity-controls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
 .qty-btn {
   padding: 4px 10px;
   font-size: 16px;
@@ -73,10 +42,4 @@
 
 .qty-btn:hover {
   background-color: #0056b3;
-}
-
-.qty {
-  font-size: 16px;
-  min-width: 20px;
-  text-align: center;
 }

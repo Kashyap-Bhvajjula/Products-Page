@@ -1,16 +1,9 @@
-.navbar {
-    background: #333;
-    color: red;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .cart-icon-wrapper {
+.cart-icon-wrapper {
     position: relative;
     cursor: pointer;
   }
-  .cart-count {
+
+.cart-count {
     background: red;
     color: white;
     border-radius: 50%;
