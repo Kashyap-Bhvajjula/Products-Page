@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import ProductCard from "../Components/ProductCard";
 import Navbar from "../Components/Navbar";
 import { useNavigate } from "react-router-dom";
-import "./Home.css";
 import shirtImg from "../Images/shirt.avif";
 import bikeImg from "../Images/bike.avif";
 import capImg from "../Images/cap.jpeg";
