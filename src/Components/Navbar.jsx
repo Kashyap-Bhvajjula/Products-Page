@@ -8,9 +8,6 @@ const Navbar = ({ cart, updateQuantity, removeFromCart }) => {
 
   const toggleCart = () => setShowCart((prev) => !prev);
 
-  const clearCart = () => {
-    setCart([]);
-  };
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -26,11 +23,11 @@ const Navbar = ({ cart, updateQuantity, removeFromCart }) => {
 
   return (
     <nav className="flex text-2xl text-red-500 bg-[#333] items-center justify-between pt-4 pb-4 pl-5 pr-5">
-      <h1>🛍️ eShop</h1>
+      <h1 className='cursor-pointer'>🛍️ eShop</h1>
       <div className="cart-icon-wrapper" ref={cartRef} onClick={toggleCart} style={{ color: showCart ? '#000' : 'black' }}>
         🛒<span className="cart-count">{totalItems}</span>
         {showCart && (
-          <CartDropdown cart={cart} updateQuantity={updateQuantity} removeFromCart={removeFromCart} clearCart={clearCart} />
+          <CartDropdown cart={cart} updateQuantity={updateQuantity} removeFromCart={removeFromCart} />
         )}
       </div>
     </nav>

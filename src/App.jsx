@@ -6,7 +6,6 @@ import Navbar from './Components/Navbar';
 
 function App() {
   const [cart, setCart] = useState([]);
-  const [triggerAnimation, setTriggerAnimation] = useState(false);
 
   const addToCart = (product) => {
     const existing = cart.find(item => item.id === product.id);
@@ -14,7 +13,6 @@ function App() {
       updateQuantity(product.id, existing.quantity + 1);
     } else {
       setCart([...cart, { ...product, quantity: 1 }]);
-      setTriggerAnimation(true);
     }
   };
 
@@ -30,10 +28,6 @@ function App() {
 
   const removeFromCart = (id) => {
     setCart(cart.filter(item => item.id !== id));
-  };
-
-  const clearCart = () => {
-    setCart([]);
   };
 
   return (

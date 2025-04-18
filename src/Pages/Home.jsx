@@ -15,7 +15,6 @@ const Home = () => {
     return savedCart ? JSON.parse(savedCart) : [];
   });
 
-  const [triggerAnimation, setTriggerAnimation] = useState(false);
   const navigate = useNavigate();
 
   const sampleProducts = [
@@ -41,7 +40,6 @@ const Home = () => {
       } else {
         const product = sampleProducts.find((p) => p.id === productId);
         if (product) {
-          setTriggerAnimation(true);
           return [...prevCart, { ...product, quantity: 1 }];
         }
         return prevCart;
@@ -67,7 +65,6 @@ const Home = () => {
         cart={cart}
         updateQuantity={updateCart}
         removeFromCart={(id) => updateCart(id, -Infinity)}
-        triggerAnimation={triggerAnimation}
         handleProceedToPayment={handleProceedToPayment}
       />
       <div className="flex flex-wrap gap-4 justify-center p-5">
